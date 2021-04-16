@@ -60,7 +60,21 @@
     </div>
   </header><!-- End Header -->
   <section id="New">
+
     <h1>    Hochlade funktion</h1>
+    <!-- Ab HTML5 -->
+<form id="formularid">
+</form>
+
+<form id="uploadform" method="post" enctype="multipart/form-data">	
+	<input id="files" type="file" name="files[]" multiple>
+	<input type="submit" value="Upload File" name="submit">
+</form>
+
+<div class="filelist"></div>
+<div id="result"></div>
+
+<script src="assets/css/simple-upload.js"></script>
 </section><!-- End Hero Section -->
 <footer id="footer">
     <div class="footer-top">

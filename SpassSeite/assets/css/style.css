@@ -443,35 +443,47 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+
+
+/*Try insert new CSS Class*/
+#New {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/Smiley.jpg) top center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  #New {
+    background-attachment: fixed;
+  }
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+#videoMain {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center;
+  background: url(../img/Smiley.jpg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  #videoMain {
     background-attachment: fixed;
   }
 }
 
-#hero:before {
-  content: "";
-  background: rgba(6, 12, 34, 0.8);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 
-#hero .hero-container {
+
+#videoMain .videoMain-container {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -486,12 +498,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 991px) {
-  #hero .hero-container {
+  #videoMain .videoMain-container {
     top: 70px;
   }
 }
 
-#hero h1 {
+#videoMain h1 {
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-size: 56px;
@@ -499,29 +511,29 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-#hero h1 span {
+#videoMain h1 span {
   color: #f82249;
 }
 
 @media (max-width: 991px) {
-  #hero h1 {
+  #videoMain h1 {
     font-size: 34px;
   }
 }
 
-#hero p {
+#videoMain p {
   color: #ebebeb;
   font-weight: 700;
   font-size: 20px;
 }
 
 @media (max-width: 991px) {
-  #hero p {
+  #videoMain p {
     font-size: 16px;
   }
 }
 
-#hero .play-btn {
+#videoMain .play-btn {
   width: 94px;
   height: 94px;
   background: radial-gradient(#f82249 50%, rgba(101, 111, 150, 0.15) 52%);
@@ -531,7 +543,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
-#hero .play-btn::after {
+#videoMain .play-btn::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -546,7 +558,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-#hero .play-btn:before {
+#videoMain .play-btn:before {
   content: '';
   position: absolute;
   width: 120px;
@@ -569,12 +581,12 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(198, 16, 0, 0);
 }
 
-#hero .play-btn:hover::after {
+#videoMain .play-btn:hover::after {
   border-left: 15px solid #f82249;
   transform: scale(20);
 }
 
-#hero .play-btn:hover::before {
+#videoMain .play-btn:hover::before {
   content: '';
   position: absolute;
   left: 50%;
@@ -592,7 +604,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0;
 }
 
-#hero .about-btn {
+#videoMain .about-btn {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -609,7 +621,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #f82249;
 }
 
-#hero .about-btn:hover {
+#videoMain .about-btn:hover {
   background: #f82249;
   color: #fff;
 }
@@ -635,7 +647,6 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
   }
 }
-
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/

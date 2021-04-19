@@ -9,10 +9,12 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #fff;
+  background:url(../img/Smiley.jpg) top center;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
 }
+
+
 
 a {
   color: #f82249;

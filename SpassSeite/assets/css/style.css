@@ -129,6 +129,46 @@ h1, h2, h3, h4, h5, h6 {
 .section-with-bg {
   background-color: #f6f7fd;
 }
+/*
+Versuch um den Header auf der Starseite zu Animieren
+*/
+#header_MainPage
+{
+  
+    height: 90px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+  z-index: 997; 
+}
+
+  #header_MainPage.header_MainPage-scrolled, #header_MainPage.header-inner {
+    background: rgba(6, 12, 34, 0.98);
+    height: 70px;
+  }
+  #header_MainPage #logo h1 {
+    font-size: 36px;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  
+  #header_MainPage #logo img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+  }
+  
+  @media (max-width: 992px) {
+    #header_MainPage #logo img {
+      max-height: 30px;
+    }
+  }
+ 
 
 /*--------------------------------------------------------------
 # Header
@@ -141,9 +181,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-}
 
-#header.header-scrolled, #header.header-inner {
   background: rgba(0, 0, 0, 0.98);
   height: 70px;
 }
@@ -155,14 +193,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-}
-
-#header #logo h1 span {
-  color: #f82249;
-}
-
-#header #logo h1 a, #header #logo h1 a:hover {
-  color: #fff;
 }
 
 #header #logo img {
@@ -209,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgba(202, 206, 221, 0.8);
+  color: rgba(199, 198, 198, 0.8);
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -232,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #f82249;
+  background-color: #c02e2e;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -243,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .navbar .dropdown ul {

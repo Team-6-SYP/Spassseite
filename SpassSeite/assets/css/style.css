@@ -181,7 +181,6 @@ Versuch um den Header auf der Starseite zu Animieren
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-
   background: rgba(0, 0, 0, 0.98);
   height: 70px;
 }

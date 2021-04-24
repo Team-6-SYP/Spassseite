@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url("../img/preloader.svg") no-repeat center center;
+  background: rgb(255, 255, 255) url("../img/preloader.svg") no-repeat center center;
 }
 
 /*--------------------------------------------------------------
@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-with-bg {
-  background-color: #f6f7fd;
+  background-color: #fafbfc;
 }
 /*
 Versuch um den Header auf der Starseite zu Animieren
@@ -238,10 +238,10 @@ Versuch um den Header auf der Starseite zu Animieren
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgba(199, 198, 198, 0.8);
-  font-family: "Raleway", sans-serif;
+  color: rgba(101, 117, 189, 0.966);
+  font-family: "Raleway", sans-serif;          /* Obere Navigationsleiste Farbe etc. */
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;    
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -261,7 +261,7 @@ Versuch um den Header auf der Starseite zu Animieren
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #c02e2e;
+  background-color: #ca3a3a;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -495,7 +495,8 @@ Versuch um den Header auf der Starseite zu Animieren
   flex-direction: column;
   text-align: center;
   padding: 0 15px;
-}
+
+  }
 
 @media (max-width: 991px) {
   #videoMain .videoMain-container {
@@ -504,15 +505,20 @@ Versuch um den Header auf der Starseite zu Animieren
 }
 
 #videoMain h1 {
-  color: #fff;
+  color: rgb(14, 16, 177);                             /*  The Fail of the day- erste Seite Farbe usw. */
   font-family: "Raleway", sans-serif;
   font-size: 56px;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
+
+  border-color: rgb(250, 250, 250);                   /*  Das ist der weiße Rahmen */
+  border-width: 5px;
+  border-style: groove;
+  background:rgb(250, 250, 250);
 }
 
 #videoMain h1 span {
-  color: #f82249;
+  color: #f80606;
 }
 
 @media (max-width: 991px) {

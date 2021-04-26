@@ -8,12 +8,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/*Diese body hat den Hintergrund der gesamten Seite verändert. Deswegen war Seite nich mehr scrollbar und der Footer war von Anfang an Sichtbar. Ich habe die Sektion mit der ID  "New" Zeile-448
 body {
   background:url(../img/Smiley.jpg) top center;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
 }
-
+*/
 
 
 a {
@@ -39,22 +40,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px 0;
   padding: 0;
   color: #0e1b4d;
-}
-
-.main-page {
-  margin-top: 70px;
-}
-
-/* Prelaoder */
-#preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  background: rgb(255, 255, 255) url("../img/preloader.svg") no-repeat center center;
 }
 
 /*--------------------------------------------------------------
@@ -90,51 +75,12 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
-/* Sections Header
---------------------------------*/
-.section-header {
-  margin-bottom: 60px;
-  position: relative;
-  padding-bottom: 20px;
-}
 
-.section-header::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 5px;
-  background: #f82249;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
-
-.section-header h2 {
-  font-size: 36px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.section-header p {
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  font-size: 18px;
-  font-weight: 500;
-  color: #9195a2;
-}
-
-.section-with-bg {
-  background-color: #fafbfc;
-}
 /*
 Versuch um den Header auf der Starseite zu Animieren
 */
 #header_MainPage
-{
-  
+{ 
     height: 90px;
     position: fixed;
     left: 0;
@@ -144,8 +90,8 @@ Versuch um den Header auf der Starseite zu Animieren
   z-index: 997; 
 }
 
-  #header_MainPage.header_MainPage-scrolled, #header_MainPage.header-inner {
-    background: rgba(6, 12, 34, 0.98);
+  #header_MainPage.heade-scrolled, #header_MainPage.header-inner {
+    background: rgba(0, 0, 0, 0.98);
     height: 70px;
   }
   #header_MainPage #logo h1 {
@@ -445,26 +391,84 @@ Versuch um den Header auf der Starseite zu Animieren
 
 
 
-/*Try insert new CSS Class*/
+/*Sektion New für Backrouground */
+
 #New {
   width: 100%;
-  height: 100vh;
-  background: url(../img/Smiley.jpg) top center;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
+  background: url(../img/Smiley.jpg) top center; 
+  
+  overflow: hidden; 
+  
+  margin-top: 70px;
+  
+  
 }
+#New  h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #002ee4;
+  
+}
+#New h3{
+  font-size: 110%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  padding: 0;
+  color: #0e1b4d;
+}
+#New #galerie{
+  padding-top: 70px;
+}
+#New form#uploadform{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50%;
+}
+#New #fun_text {
+  padding: 60px 0;
+}
+
+#New #fun_text .fun_text-wrap {
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #e0e5fa;
+  margin-bottom: 30px;
+}
+
+#New #fun_text .fun_text-text {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #e0e5fa;
+  border-bottom: 1px solid #e0e5fa;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+  height: 160px;
+}
+
+#New #fun_text .fun_text-text:hover img {
+  transform: scale(1.2);
+}
+
+#New #fun_text img {
+  transition: all 0.4s ease-in-out;
+}
+
 @media (min-width: 1024px) {
   #New {
     background-attachment: fixed;
   }
 }
-
-
-
-
+#New #contact{
+  padding-bottom: 10%;
+}
 /*--------------------------------------------------------------
-# Hero Section
+#VideoMain Section
 --------------------------------------------------------------*/
 #videoMain {
   width: 100%;
@@ -528,7 +532,7 @@ Versuch um den Header auf der Starseite zu Animieren
 }
 
 #videoMain p {
-  color: #ebebeb;
+  color: #000000;
   font-weight: 700;
   font-size: 20px;
 }
@@ -660,8 +664,9 @@ Versuch um den Header auf der Starseite zu Animieren
 #footer {
   background: #000000;
   padding: 0 0 25px 0;
-  color: #eee;
+  color: rgb(255, 255, 255);
   font-size: 14px;
+  position: relative;
 }
 
 #footer .footer-top {
@@ -693,31 +698,6 @@ Versuch um den Header auf der Starseite zu Animieren
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-  color: #fff;
-}
-
-#footer .footer-top .social-links a {
-  display: inline-block;
-  background: #222636;
-  color: #eee;
-  line-height: 1;
-  margin-right: 4px;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#footer .footer-top .social-links a i {
-  line-height: 0;
-  font-size: 16px;
-}
-
-#footer .footer-top .social-links a:hover {
-  background: #f82249;
   color: #fff;
 }
 
@@ -764,46 +744,3 @@ Versuch um den Header auf der Starseite zu Animieren
   color: #f82249;
 }
 
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-contact p {
-  line-height: 26px;
-}
-
-#footer .footer-top .footer-newsletter {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-newsletter input[type="email"] {
-  border: 0;
-  padding: 6px 8px;
-  width: 65%;
-}
-
-#footer .footer-top .footer-newsletter input[type="submit"] {
-  background: #f82249;
-  border: 0;
-  width: 35%;
-  padding: 6px 0;
-  text-align: center;
-  color: #fff;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-#footer .footer-top .footer-newsletter input[type="submit"]:hover {
-  background: #e0072f;
-}
-
-#footer .copyright {
-  text-align: center;
-  padding-top: 30px;
-}
-
-#footer .credits {
-  text-align: center;
-  font-size: 13px;
-  color: #ddd;
-}
